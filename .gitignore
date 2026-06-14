@@ -1,11 +1,15 @@
 # ==========================
-# React Frontend
+# React Frontend (Vite)
 # ==========================
 frontend/node_modules/
-frontend/build/
 frontend/dist/
+frontend/dist-ssr/
+frontend/build/
+
+# Frontend env/local files
 frontend/.env
 frontend/.env.local
+frontend/*.local
 
 # ==========================
 # FastAPI Backend
@@ -23,8 +27,16 @@ backend/env/
 # Environment variables
 backend/.env
 
+# ==========================
 # Logs
+# ==========================
+logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # ==========================
 # Database / Local Files
@@ -34,8 +46,14 @@ backend/.env
 # ==========================
 # IDE / Editor
 # ==========================
-.vscode/
+.vscode/*
+!.vscode/extensions.json
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # ==========================
 # OS Files
